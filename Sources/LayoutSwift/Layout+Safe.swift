@@ -11,89 +11,89 @@ public extension Layout {
   /**
    Constraints top of the view to the parent's safeAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func topSafe(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    top(ensuredParent.safeAnchor, offset, relationer)
+  func topSafe(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    top(ensuredParent.safeAnchor, offset, relation)
   }
   
   /**
    Constraints left of the view to the parent's safeAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func leftSafe(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    left(ensuredParent.safeAnchor, offset, relationer)
+  func leftSafe(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    left(ensuredParent.safeAnchor, offset, relation)
   }
   
   /**
    Constraints right of the view to the parent's safeAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func rightSafe(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    right(ensuredParent.safeAnchor, offset, relationer)
+  func rightSafe(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    right(ensuredParent.safeAnchor, offset, relation)
   }
   
   /**
    Constraints leading of the view to the parent's safeAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func leadingSafe(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    leading(ensuredParent.safeAnchor, offset, relationer)
+  func leadingSafe(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    leading(ensuredParent.safeAnchor, offset, relation)
   }
   
   /**
    Constraints trailing of the view to the parent's safeAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func trailingSafe(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    trailing(ensuredParent.safeAnchor, offset, relationer)
+  func trailingSafe(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    trailing(ensuredParent.safeAnchor, offset, relation)
   }
   
   /**
    Constraints bottom of the view to the parent's safeAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func bottomSafe(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    bottom(ensuredParent.safeAnchor, offset, relationer)
+  func bottomSafe(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    bottom(ensuredParent.safeAnchor, offset, relation)
   }
 
   /**
    Constraints horizontal center of the view to the parent's safeAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func centerXSafe(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    centerX(ensuredParent.safeAnchor, offset, relationer)
+  func centerXSafe(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    centerX(ensuredParent.safeAnchor, offset, relation)
   }
   
   /**
    Constraints vertical center of the view to the parent's safeAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func centerYSafe(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    centerY(ensuredParent.safeAnchor, offset, relationer)
+  func centerYSafe(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    centerY(ensuredParent.safeAnchor, offset, relation)
   }
 }
 
@@ -252,22 +252,22 @@ public extension Layout {
   /**
    Constraints width of the view to the parent's safeAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func widthSafe(offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    width(ensuredParent.safeAnchor, offset: offset, relationer)
+  func widthSafe(offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    width(ensuredParent.safeAnchor, offset: offset, relation)
   }
   
   /**
    Constraints height of the view to the parent's safeAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func heightSafe(offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    height(ensuredParent.safeAnchor, offset: offset, relationer)
+  func heightSafe(offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    height(ensuredParent.safeAnchor, offset: offset, relation)
   }
 }

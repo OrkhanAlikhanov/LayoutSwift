@@ -155,8 +155,8 @@ internal extension Layout {
    - Parameter constant: A CGFloat.
    - Returns: A Layout instance to allow chaining.
    */
-  func constraint(_ attribute: LayoutAttribute, to anchor: LayoutAnchorable, relationer: LayoutRelationer = LayoutRelationers.equal, constant: CGFloat) -> Layout {
-    constraint([attribute], to: anchor, relationer: relationer, constants: [constant])
+  func constraint(_ attribute: LayoutAttribute, to anchor: LayoutAnchorable, relation: LayoutRelation = .equal, constant: CGFloat) -> Layout {
+    constraint([attribute], to: anchor, relation: relation, constants: [constant])
   }
   
   /**
@@ -168,7 +168,7 @@ internal extension Layout {
    - Parameter constants: An array of CGFloat.
    - Returns: A Layout instance to allow chaining.
    */
-  func constraint(_ attributes: [LayoutAttribute], to anchor: LayoutAnchorable, relationer: LayoutRelationer = LayoutRelationers.equal, constants: [CGFloat]) -> Layout {
+  func constraint(_ attributes: [LayoutAttribute], to anchor: LayoutAnchorable, relation: LayoutRelation = .equal, constants: [CGFloat]) -> Layout {
     let from = LayoutAnchor(constraintable: constraintable, attributes: attributes)
     var to = anchor as? LayoutAnchor
     if to?.attributes.isEmpty ?? true {
@@ -176,7 +176,7 @@ internal extension Layout {
       to = LayoutAnchor(constraintable: v, attributes: attributes)
     }
     
-    let constraint = LayoutConstraint(fromAnchor: from, toAnchor: to!, relation: relationer(.nil, .nil), constants: constants)
+    let constraint = LayoutConstraint(fromAnchor: from, toAnchor: to!, relation: relation, constants: constants)
     
     let constraints = (view?.constraints ?? []) + (view?.superview?.constraints ?? [])
     let newConstraints = constraint.constraints

@@ -11,89 +11,89 @@ public extension Layout {
   /**
    Constraints top of the view to the parent's marginAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func topMargin(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    top(ensuredParent.marginAnchor, offset, relationer)
+  func topMargin(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    top(ensuredParent.marginAnchor, offset, relation)
   }
   
   /**
    Constraints left of the view to the parent's marginAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func leftMargin(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    left(ensuredParent.marginAnchor, offset, relationer)
+  func leftMargin(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    left(ensuredParent.marginAnchor, offset, relation)
   }
   
   /**
    Constraints right of the view to the parent's marginAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func rightMargin(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    right(ensuredParent.marginAnchor, offset, relationer)
+  func rightMargin(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    right(ensuredParent.marginAnchor, offset, relation)
   }
   
   /**
    Constraints leading of the view to the parent's marginAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func leadingMargin(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    leading(ensuredParent.marginAnchor, offset, relationer)
+  func leadingMargin(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    leading(ensuredParent.marginAnchor, offset, relation)
   }
   
   /**
    Constraints trailing of the view to the parent's marginAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func trailingMargin(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    trailing(ensuredParent.marginAnchor, offset, relationer)
+  func trailingMargin(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    trailing(ensuredParent.marginAnchor, offset, relation)
   }
   
   /**
    Constraints bottom of the view to the parent's marginAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func bottomMargin(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    bottom(ensuredParent.marginAnchor, offset, relationer)
+  func bottomMargin(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    bottom(ensuredParent.marginAnchor, offset, relation)
   }
 
   /**
    Constraints horizontal center of the view to the parent's marginAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func centerXMargin(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    centerX(ensuredParent.marginAnchor, offset, relationer)
+  func centerXMargin(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    centerX(ensuredParent.marginAnchor, offset, relation)
   }
   
   /**
    Constraints vertical center of the view to the parent's marginAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func centerYMargin(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    centerY(ensuredParent.marginAnchor, offset, relationer)
+  func centerYMargin(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    centerY(ensuredParent.marginAnchor, offset, relation)
   }
 }
 
@@ -252,22 +252,22 @@ public extension Layout {
   /**
    Constraints width of the view to the parent's marginAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func widthMargin(offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    width(ensuredParent.marginAnchor, offset: offset, relationer)
+  func widthMargin(offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    width(ensuredParent.marginAnchor, offset: offset, relation)
   }
   
   /**
    Constraints height of the view to the parent's marginAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func heightMargin(offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    height(ensuredParent.marginAnchor, offset: offset, relationer)
+  func heightMargin(offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    height(ensuredParent.marginAnchor, offset: offset, relation)
   }
 }

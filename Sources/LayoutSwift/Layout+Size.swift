@@ -11,23 +11,23 @@ public extension Layout {
   /**
    Constraints width of the view to a constant value.
    - Parameter _ width: A CGFloat value.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func width(_ width: CGFloat, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint([.width], to: LayoutAnchor(constraintable: nil, attributes: [.notAnAttribute]), relationer: relationer, constants: [width])
+  func width(_ width: CGFloat, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint([.width], to: LayoutAnchor(constraintable: nil, attributes: [.notAnAttribute]), relation: relation, constants: [width])
   }
   
   /**
    Constraints height of the view to a constant value.
    - Parameter _ height: A CGFloat value.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func height(_ height: CGFloat, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint([.height], to: LayoutAnchor(constraintable: nil, attributes: [.notAnAttribute]), relationer: relationer, constants: [height])
+  func height(_ height: CGFloat, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint([.height], to: LayoutAnchor(constraintable: nil, attributes: [.notAnAttribute]), relation: relation, constants: [height])
   }
   
   /**

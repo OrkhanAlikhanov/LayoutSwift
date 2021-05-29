@@ -11,89 +11,89 @@ public extension Layout {
   /**
    Constraints top of the view to the parent's readableAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func topReadable(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    top(ensuredParent.readableAnchor, offset, relationer)
+  func topReadable(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    top(ensuredParent.readableAnchor, offset, relation)
   }
   
   /**
    Constraints left of the view to the parent's readableAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func leftReadable(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    left(ensuredParent.readableAnchor, offset, relationer)
+  func leftReadable(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    left(ensuredParent.readableAnchor, offset, relation)
   }
   
   /**
    Constraints right of the view to the parent's readableAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func rightReadable(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    right(ensuredParent.readableAnchor, offset, relationer)
+  func rightReadable(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    right(ensuredParent.readableAnchor, offset, relation)
   }
   
   /**
    Constraints leading of the view to the parent's readableAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func leadingReadable(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    leading(ensuredParent.readableAnchor, offset, relationer)
+  func leadingReadable(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    leading(ensuredParent.readableAnchor, offset, relation)
   }
   
   /**
    Constraints trailing of the view to the parent's readableAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func trailingReadable(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    trailing(ensuredParent.readableAnchor, offset, relationer)
+  func trailingReadable(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    trailing(ensuredParent.readableAnchor, offset, relation)
   }
   
   /**
    Constraints bottom of the view to the parent's readableAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func bottomReadable(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    bottom(ensuredParent.readableAnchor, offset, relationer)
+  func bottomReadable(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    bottom(ensuredParent.readableAnchor, offset, relation)
   }
 
   /**
    Constraints horizontal center of the view to the parent's readableAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func centerXReadable(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    centerX(ensuredParent.readableAnchor, offset, relationer)
+  func centerXReadable(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    centerX(ensuredParent.readableAnchor, offset, relation)
   }
   
   /**
    Constraints vertical center of the view to the parent's readableAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func centerYReadable(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    centerY(ensuredParent.readableAnchor, offset, relationer)
+  func centerYReadable(_ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    centerY(ensuredParent.readableAnchor, offset, relation)
   }
 }
 
@@ -252,22 +252,22 @@ public extension Layout {
   /**
    Constraints width of the view to the parent's readableAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func widthReadable(offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    width(ensuredParent.readableAnchor, offset: offset, relationer)
+  func widthReadable(offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    width(ensuredParent.readableAnchor, offset: offset, relation)
   }
   
   /**
    Constraints height of the view to the parent's readableAnchor.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func heightReadable(offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    height(ensuredParent.readableAnchor, offset: offset, relationer)
+  func heightReadable(offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    height(ensuredParent.readableAnchor, offset: offset, relation)
   }
 }

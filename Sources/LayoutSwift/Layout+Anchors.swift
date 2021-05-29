@@ -12,96 +12,96 @@ public extension Layout {
    Constraints top of the view to the given anchor.
    - Parameter _ anchor: A LayoutAnchorable.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func top(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint(.top, to: anchor, relationer: relationer, constant: offset)
+  func top(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint(.top, to: anchor, relation: relation, constant: offset)
   }
   
   /**
    Constraints left of the view to the given anchor.
    - Parameter _ anchor: A LayoutAnchorable.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func left(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint(.left, to: anchor, relationer: relationer, constant: offset)
+  func left(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint(.left, to: anchor, relation: relation, constant: offset)
   }
   
   /**
    Constraints right of the view to the given anchor.
    - Parameter _ anchor: A LayoutAnchorable.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func right(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint(.right, to: anchor, relationer: relationer, constant: -offset)
+  func right(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint(.right, to: anchor, relation: relation, constant: -offset)
   }
   
   /**
    Constraints leading of the view to the given anchor.
    - Parameter _ anchor: A LayoutAnchorable.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func leading(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint(.leading, to: anchor, relationer: relationer, constant: offset)
+  func leading(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint(.leading, to: anchor, relation: relation, constant: offset)
   }
   
   /**
    Constraints trailing of the view to the given anchor.
    - Parameter _ anchor: A LayoutAnchorable.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func trailing(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint(.trailing, to: anchor, relationer: relationer, constant: -offset)
+  func trailing(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint(.trailing, to: anchor, relation: relation, constant: -offset)
   }
   
   /**
    Constraints bottom of the view to the given anchor.
    - Parameter _ anchor: A LayoutAnchorable.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func bottom(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint(.bottom, to: anchor, relationer: relationer, constant: -offset)
+  func bottom(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint(.bottom, to: anchor, relation: relation, constant: -offset)
   }
 
   /**
    Constraints horizontal center of the view to the given anchor.
    - Parameter _ anchor: A LayoutAnchorable.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func centerX(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint(.centerX, to: anchor, relationer: relationer, constant: offset)
+  func centerX(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint(.centerX, to: anchor, relation: relation, constant: offset)
   }
   
   /**
    Constraints vertical center of the view to the given anchor.
    - Parameter _ anchor: A LayoutAnchorable.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func centerY(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint(.centerY, to: anchor, relationer: relationer, constant: offset)
+  func centerY(_ anchor: LayoutAnchorable, _ offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint(.centerY, to: anchor, relation: relation, constant: offset)
   }
 }
 
@@ -274,23 +274,23 @@ public extension Layout {
    Constraints width of the view to the given anchor.
    - Parameter _ anchor: A LayoutAnchorable.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func width(_ anchor: LayoutAnchorable, offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint(.width, to: anchor, relationer: relationer, constant: offset)
+  func width(_ anchor: LayoutAnchorable, offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint(.width, to: anchor, relation: relation, constant: offset)
   }
   
   /**
    Constraints height of the view to the given anchor.
    - Parameter _ anchor: A LayoutAnchorable.
    - Parameter _ offset: A CGFloat offset.
-   - Parameter _ relationer: A LayoutRelationer.
+   - Parameter _ relation: A LayoutRelation.
    - Returns: A Layout instance to allow chaining.
    */
   @discardableResult
-  func height(_ anchor: LayoutAnchorable, offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationers.equal) -> Layout {
-    constraint(.height, to: anchor, relationer: relationer, constant: offset)
+  func height(_ anchor: LayoutAnchorable, offset: CGFloat = 0, _ relation: LayoutRelation = .equal) -> Layout {
+    constraint(.height, to: anchor, relation: relation, constant: offset)
   }
 }
