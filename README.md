@@ -20,6 +20,7 @@ override func viewDidLoad() {
     .centerX()
     .widthMargin()
     .below(logoView, 16)
+}
 ```
 
 For details, refer to the PRs for docs:
