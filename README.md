@@ -31,6 +31,7 @@ For details, refer to the PRs for docs:
 
 ## Other works
 - [ChainSwift](https://github.com/OrkhanAlikhanov/ChainSwift) - ChainSwift 🔗 is an extension that provides chainable way of setting properties.
+- [SwiftUIRouter](https://github.com/OrkhanAlikhanov/SwiftUIRouter) - An experimental navigation router for SwiftUI
 
 ## Installation
 
